@@ -11,8 +11,9 @@ func main() {
 		fmt.Println("Error:", err)
 		return
 	}
-
 	for _, device := range devices {
 		fmt.Println(device)
 	}
+	fmt.Println("Done Network Scanning, beginning Port Scanning")
+	network.ScanPorts()
 }
